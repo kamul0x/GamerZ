@@ -6,3 +6,4 @@ DB with SQLlite
 Encounter new gamers thanks to this app
 Criteria based on name, picture and games played
 
+Pushed on master
