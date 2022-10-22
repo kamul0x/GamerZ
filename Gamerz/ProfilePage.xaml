@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gamerz.ProfilePage"
+             xmlns:models="clr-namespace:GamerZ_Lib;assembly=GamerZ_Lib"
+             Title="ProfilePage">
+
+    <ContentPage.BindingContext>
+        <models:Player />
+    </ContentPage.BindingContext>
+    
+   
+    <VerticalStackLayout>
+        <Label 
+            Text="Profile page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="{Binding Name}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="{Binding Age}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="{Binding Description}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+            Text="Modify"
+            BackgroundColor="Aquamarine"
+            />
+        <ImageButton
+            Source="dotnet_bot.svg"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
